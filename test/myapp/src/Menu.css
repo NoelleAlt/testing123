@@ -1,7 +1,7 @@
 /* src/Menu.css */
 .menu {
-    background-color: #333;
-    color: white;
+    background-color: #c83131;
+    color: rgb(75, 4, 4);
     padding: 10px;
   }
   
@@ -16,5 +16,5 @@
   }
   
   .menu li:hover {
-    background-color: #575757;
+    background-color: #880202;
   }
