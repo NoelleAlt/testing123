@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   const menuItems = ['Home', 'About', 'Services', 'Contact'];
