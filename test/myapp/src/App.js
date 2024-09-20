@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Menu from './Menu';
 
-function App() {
+const App = () => {
+  const menuItems = ['Home', 'About', 'Services', 'Contact'];
+
+  const handleSelect = (item) => {
+    console.log(`Selected: ${item}`);
+    // Here you can add logic to navigate or change the app state
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My App</h1>
+      <Menu items={menuItems} onSelect={handleSelect} />
+      {/* Other components can go here */}
     </div>
   );
-}
+};
 
 export default App;
+
