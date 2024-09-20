@@ -1,3 +1,4 @@
+// src/App.js
 import React from 'react';
 import Menu from './Menu';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,12 +13,13 @@ const App = () => {
 
   return (
     <div>
-      <h1>My App</h1>
       <Menu items={menuItems} onSelect={handleSelect} />
-      {/* Other components can go here */}
+      <div className="container">
+        <h1>Welcome to My App</h1>
+        {/* Other components can go here */}
+      </div>
     </div>
   );
 };
 
 export default App;
-
